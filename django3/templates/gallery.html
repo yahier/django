@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>简洁大方的美战士图片切换效果</title>
+<link href="http://keleyi.com/keleyi/phtml/jqtexiao/17/css/keleyi.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="http://keleyi.com/keleyi/pmedia/jquery/jquery-1.10.2.min.js"></script>
+<script>
+(function(d,D,v){d.fn.responsiveSlides=function(h){var b=d.extend({auto:!0,speed:1E3,timeout:7E3,pager:!1,nav:!1,random:!1,pause:!1,pauseControls:!1,prevText:"Previous",nextText:"Next",maxwidth:"",controls:"",namespace:"rslides",before:function(){},after:function(){}},h);return this.each(function(){v++;var e=d(this),n,p,i,k,l,m=0,f=e.children(),w=f.size(),q=parseFloat(b.speed),x=parseFloat(b.timeout),r=parseFloat(b.maxwidth),c=b.namespace,g=c+v,y=c+"_nav "+g+"_nav",s=c+"_here",j=g+"_on",z=g+"_s",
+o=d("<ul class='"+c+"_tabs "+g+"_tabs' />"),A={"float":"left",position:"relative"},E={"float":"none",position:"absolute"},t=function(a){b.before();f.stop().fadeOut(q,function(){d(this).removeClass(j).css(E)}).eq(a).fadeIn(q,function(){d(this).addClass(j).css(A);b.after();m=a})};b.random&&(f.sort(function(){return Math.round(Math.random())-0.5}),e.empty().append(f));f.each(function(a){this.id=z+a});e.addClass(c+" "+g);h&&h.maxwidth&&e.css("max-width",r);f.hide().eq(0).addClass(j).css(A).show();if(1<
+f.size()){if(x<q+100)return;if(b.pager){var u=[];f.each(function(a){a=a+1;u=u+("<li><a href='#' class='"+z+a+"'>"+a+"</a></li>")});o.append(u);l=o.find("a");h.controls?d(b.controls).append(o):e.after(o);n=function(a){l.closest("li").removeClass(s).eq(a).addClass(s)}}b.auto&&(p=function(){k=setInterval(function(){var a=m+1<w?m+1:0;b.pager&&n(a);t(a)},x)},p());i=function(){if(b.auto){clearInterval(k);p()}};b.pause&&e.hover(function(){clearInterval(k)},function(){i()});b.pager&&(l.bind("click",function(a){a.preventDefault();
+b.pauseControls||i();a=l.index(this);if(!(m===a||d("."+j+":animated").length)){n(a);t(a)}}).eq(0).closest("li").addClass(s),b.pauseControls&&l.hover(function(){clearInterval(k)},function(){i()}));if(b.nav){c="<a href='javascript:' class='"+y+" prev'>"+b.prevText+"</a><a href='javascript:' class='"+y+" next'>"+b.nextText+"</a>";h.controls?d(b.controls).append(c):e.after(c);var c=d("."+g+"_nav"),B=d("."+g+"_nav.prev");c.bind("click",function(a){a.preventDefault();if(!d("."+j+":animated").length){var c=f.index(d("."+j)),
+a=c-1,c=c+1<w?m+1:0;t(d(this)[0]===B[0]?a:c);b.pager&&n(d(this)[0]===B[0]?a:c);b.pauseControls||i()}});b.pauseControls&&c.hover(function(){clearInterval(k)},function(){i()})}}if("undefined"===typeof document.body.style.maxWidth&&h.maxwidth){var C=function(){e.css("width","100%");e.width()>r&&e.css("width",r)};C();d(D).bind("resize",function(){C()})}})}})(jQuery,this,0);
+
+$(function() {
+$(".f426x240").responsiveSlides({
+auto: true,
+pager: true,
+nav: true,
+speed: 700
+});
+
+$(".f160x160").responsiveSlides({
+auto: true,
+pager: true,
+speed: 700
+});
+});
+</script>
+<style>
+.keleyiimg{border:0px; width:75%}
+</style>
+</head>
+<body>
+<div class="new_banner">
+<ul class="rslides f426x240">
+<li><a href="http://keleyi.com"><img src="G:\我的图片\朋友们\pretty pretty\002564a5eb9a120708a906.jpg" class="keleyiimg" /></a></li>
+<li><a href="http://keleyi.cobjac/06r1x7tg.htm"><img src="G:\我的图片\朋友们\pretty pretty\a50f4bfbfbedab64f5ff857bf636afc378311ef8.jpg" class="keleyiimg" /></a></li>
+<li><a href="http://keleyi.c/8pwhsjna.htm"><img src="G:\我的图片\朋友们\pretty pretty\002564a5eb9a120708a905.jpg" class="keleyiimg" /></a></li>
+<li><a href="http://ksw6q5t.htm"><img src="G:\我的图片\朋友们\pretty pretty\aec379310a55b3199de433d542a98226cffc1774.jpg" class="keleyiimg" /></a></li>
+<li><a href="http://keleyi.comb6j23.htm"><img src="G:\我的图片\朋友们\pretty pretty\cf1b9d16fdfaaf51b64ffe078d5494eef11f7add.jpg" class="keleyiimg" /></a></li>
+</ul>
+</div>
+
+</body>
+</html>
